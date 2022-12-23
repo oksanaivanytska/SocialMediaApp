@@ -1,0 +1,58 @@
+@import "../../style.scss";
+
+.rightBar {
+	flex: 3; 
+	position: sticky;
+	top: 70px; 
+	height: calc(100vh - 70px);
+	overflow: scroll;
+	background-color: #cdab9a;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	@include mobile {
+		display: none;
+	}
+
+
+	.container {
+		padding: 20px; 
+
+		.item {
+			box-shadow: 0px 0px 15px 1px rgba(76, 68, 63, 0.24);
+			padding: 20px; 
+			margin-bottom: 20px; 
+			background-color: rgb(248, 229, 219);
+
+			h2 {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 25px;
+				color: rgb(76, 68, 63);
+			}
+
+			.recommend {
+				margin: 20px 0px; 
+				display: flex;
+				align-items: center;
+				gap: 20px; 
+				position: relative;
+
+				img {
+					width: 30px; 
+					height: 30px; 
+					border-radius: 50%; 
+					object-fit: cover;
+				}
+
+				span {
+					font-size: 1rem; 
+					color: rgb(76, 68, 63);
+				}
+			}
+
+		}
+	}
+}

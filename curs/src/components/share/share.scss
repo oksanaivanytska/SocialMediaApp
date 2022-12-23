@@ -1,0 +1,73 @@
+.share {
+	box-shadow: 0px 0px 15px 1px rgba(76, 68, 63, 0.24);
+	margin-bottom: 20px;
+	background-color: rgb(248, 229, 219);
+
+	.container {
+		padding: 20px;
+
+		.top {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			img {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+
+			input {
+				border: none;
+				outline: none;
+				padding: 20px 10px;
+				background-color: transparent;
+				width: 100%;
+				color: rgb(76, 68, 63);
+			}
+		}
+
+		hr {
+			margin: 20px 0px; 
+			border: none;
+			height: 1px;
+			background-color: #B4846C;
+		}
+
+		.bottom {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.left {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				.item {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					cursor: pointer;
+
+					span {
+						font-size: 0.8rem;
+						color: rgb(76, 68, 63);
+					}
+				}
+			}
+
+			.right {
+				button {
+					padding: 10px;
+					border: none;
+					background-color: #c25f15;
+					color: rgb(255, 255, 255);
+					font-weight: bold;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

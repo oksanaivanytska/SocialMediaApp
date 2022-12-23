@@ -1,0 +1,81 @@
+@import "../../style.scss";
+
+.navBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	height: 50px; 
+	position: sticky;
+	top: 0;
+	background-color: #B4846C; 
+	z-index: 999;
+
+	@include mobile {
+		justify-content: center;
+	}
+
+	.left {
+		display: flex;
+		align-items: center;
+		gap: 30px; 
+
+
+		span {
+			font-weight: bold;
+			font-size: 1.7rem; 
+			color: #ffffff; 
+			text-shadow: 0 6px 1px rgba(0,0,0,.1);
+
+			@include mobile {
+				display: none;
+			}
+		}
+
+	}
+
+	.right {
+		display: flex;
+		align-items: center;
+		gap: 70px; 
+
+		@include mobile {
+			gap: 10px; 
+		}
+
+		button {
+			
+			padding: 5px 25px;
+			border: none;
+			background-color: rgb(248, 229, 219);
+			color: rgb(76, 68, 63);
+			font-weight: bold;
+			font-size: 0.9rem;
+			cursor: pointer;
+
+			@include mobile {
+				font-size: 0.7rem;
+				margin-left: 20px;
+			}
+			
+		}
+
+		.user {
+			display: flex;
+			align-items: center;
+			gap: 10px; 
+			font-weight: bold; 
+
+			img {
+				width: 30px;
+				height: 30px; 
+				border-radius: 50%;
+				object-fit: cover;
+			}
+
+			span {
+				color: #ffffff;
+			}
+		}
+	}
+}

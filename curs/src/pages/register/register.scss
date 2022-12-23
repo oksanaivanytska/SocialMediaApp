@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+@import "../../style.scss";
+
+.register {
+	height: 100vh;
+	background-color: #D0B8A8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include tablet {
+		height: inherit;
+	}
+
+	.card {
+		width: 70%;
+		display: flex;
+		flex-direction: row-reverse;
+		background-color: rgb(255, 255, 255);
+		min-height: 600px;
+		overflow: hidden;
+
+		@include tablet {
+			width: 100%;
+			flex-direction: column;
+			height: 100vh;	
+		}
+
+		.left {
+			flex: 1;
+			background: linear-gradient(#571e1147, #41191044), url("https://images.pexels.com/photos/6150432/pexels-photo-6150432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+			background-size: cover;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			color: white;
+
+			@include mobile {
+				padding: 30px;	
+			}
+
+			h1 {
+				font-size: 6rem;
+				line-height: 6rem;
+
+				@include mobile {
+					font-size: 3rem;
+					line-height: 2rem;
+				}
+			}
+
+			p {
+				font-size: 1.4rem;
+
+				@include mobile {
+					text-align: start;
+					font-size: 1rem;
+				}
+			}
+
+			span {
+				font-size: 0.9rem;
+			}
+
+			button {
+				width: 50%;
+				padding: 10px;
+				border: none;
+				background-color: rgb(255, 255, 255);
+				color: rgb(52, 27, 10);
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
+
+		.right {
+			flex: 1;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 3%;
+			justify-content: space-around;
+
+			@include mobile {
+				padding: 30px;	
+			}
+
+
+			h1 {
+				color: rgb(76, 68, 63);
+
+				@include mobile {
+					font-size: 1.8rem;
+				}
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+
+				input {
+					border: none;
+					border-bottom: 1px solid rgb(76, 68, 63);
+					padding: 20px 10px;
+				}
+
+				button {
+					width: 50%; 
+					padding: 10px; 
+					border: none; 
+					background-color: #c25f15; 
+					color: rgb(255, 255, 255); 
+					font-weight: bold;
+					cursor: pointer; 
+				}
+
+			}
+		}
+	}
+}
